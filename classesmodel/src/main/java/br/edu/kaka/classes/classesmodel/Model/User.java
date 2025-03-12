@@ -17,6 +17,6 @@ public class User {
     private String name;
     private String email;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user1")
     private List<Review> reviews;
 }

@@ -1,5 +1,4 @@
-package br.edu.kaka.classes.classesmodel.Mdel;
-
+package br.edu.kaka.classes.classesmodel.Model;
     import jakarta.persistence.*;
     import lombok.*;
     
@@ -24,7 +23,7 @@ package br.edu.kaka.classes.classesmodel.Mdel;
         private short duration;
         private String genre;
     
-        @OneToMany(mappedBy = "movie")
+        @OneToMany(mappedBy = "movie1")
         private List<Review> reviews;
     }
 
