@@ -1,7 +1,7 @@
-package br.edu.kaka.classes.classesmodel.dto;
+package br.edu.soph.classes.classesmodel.dto;
 
-import br.edu.kaka.classes.classesmodel.Model.Movie;
-import br.edu.kaka.classes.classesmodel.Model.User;
+import br.edu.soph.classes.classesmodel.Model.Movie;
+import br.edu.soph.classes.classesmodel.Model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

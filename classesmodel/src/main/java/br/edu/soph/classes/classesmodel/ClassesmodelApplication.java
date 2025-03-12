@@ -1,4 +1,4 @@
-package br.edu.kaka.classes.classesmodel;
+package br.edu.soph.classes.classesmodel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

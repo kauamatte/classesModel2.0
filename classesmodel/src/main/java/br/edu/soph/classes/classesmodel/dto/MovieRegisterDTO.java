@@ -1,4 +1,4 @@
-package br.edu.kaka.classes.classesmodel.dto;
+package br.edu.soph.classes.classesmodel.dto;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,7 +6,7 @@ import lombok.*;
 import java.time.LocalDate;
 import java.util.UUID;
 
-import br.edu.kaka.classes.classesmodel.Model.Movie;
+import br.edu.soph.classes.classesmodel.Model.Movie;
 
 
 

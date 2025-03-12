@@ -1,12 +1,12 @@
-package br.edu.kaka.classes.classesmodel.dto;
+package br.edu.soph.classes.classesmodel.dto;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.List;
 
-import br.edu.kaka.classes.classesmodel.Model.Movie;
-import br.edu.kaka.classes.classesmodel.Model.Review;
+import br.edu.soph.classes.classesmodel.Model.Movie;
+import br.edu.soph.classes.classesmodel.Model.Review;
 
 @Data
 @NoArgsConstructor
