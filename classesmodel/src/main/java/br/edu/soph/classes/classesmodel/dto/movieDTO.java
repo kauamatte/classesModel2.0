@@ -1,6 +1,5 @@
 package br.edu.soph.classes.classesmodel.dto;
 
-import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.List;

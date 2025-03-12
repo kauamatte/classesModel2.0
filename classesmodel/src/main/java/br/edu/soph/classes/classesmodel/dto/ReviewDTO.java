@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 import br.edu.soph.classes.classesmodel.Model.Movie;
-import br.edu.soph.classes.classesmodel.Model.Review;
+
 import br.edu.soph.classes.classesmodel.Model.User;
 
 @NoArgsConstructor

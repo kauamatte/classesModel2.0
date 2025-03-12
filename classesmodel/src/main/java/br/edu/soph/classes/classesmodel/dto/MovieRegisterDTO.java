@@ -1,10 +1,6 @@
 package br.edu.soph.classes.classesmodel.dto;
 
-import jakarta.persistence.*;
 import lombok.*;
-
-import java.time.LocalDate;
-import java.util.UUID;
 
 import br.edu.soph.classes.classesmodel.Model.Movie;
 

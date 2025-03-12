@@ -1,6 +1,5 @@
 package br.edu.soph.classes.classesmodel.dto;
 
-import br.edu.soph.classes.classesmodel.Model.Movie;
 import br.edu.soph.classes.classesmodel.Model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
