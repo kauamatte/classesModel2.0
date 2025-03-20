@@ -34,4 +34,16 @@ public class MovieService {
     public void remove(UUID id) {
         movieRepository.deleteById(id);
     }
+
+    public List<Movie> findByTitle(String title){
+        return movieRepository.findByTitleContaining(title);
+    }
+
+    public List<Movie> findByReleaseYear(short year){
+        return movieRepository.findByReleaseYear(year);
+    }
+
+    public List<Movie> findByGenre(String genre){
+        return movieRepository.findByGenreContaining(genre);
+    }
 }
