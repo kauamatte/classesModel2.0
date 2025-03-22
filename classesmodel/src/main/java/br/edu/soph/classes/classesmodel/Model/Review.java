@@ -15,10 +15,11 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.AUTO)
     
     private UUID id;
-
     private byte rating;
     private String comment;
     private LocalDate date;
+    private String author;
+
 
     @ManyToOne
     @JoinColumn(name = "user_id")

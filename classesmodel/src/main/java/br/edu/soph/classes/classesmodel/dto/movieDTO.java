@@ -1,17 +1,14 @@
 package br.edu.soph.classes.classesmodel.dto;
 
 import lombok.*;
-
 import java.util.List;
-
 import br.edu.soph.classes.classesmodel.Model.Movie;
 import br.edu.soph.classes.classesmodel.Model.Review;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class movieDTO {
+public class MovieDTO {
 
     private String IMDB;
     private String title;
@@ -22,9 +19,17 @@ public class movieDTO {
     private String genre;
     private List<Review> reviews;
 
-    public movieDTO toDTO(Movie movie) {
-        return new movieDTO(movie.getIMDB(), movie.getTitle(), movie.getDescription(), movie.getReleaseYear(),
-                movie.getDirector(), movie.getDuration(), movie.getGenre(), reviews);
+    public static MovieDTO toDTO(Movie movie) {
+        return new MovieDTO(
+            movie.getIMDB(),
+            movie.getTitle(),
+            movie.getDescription(),
+            movie.getReleaseYear(),
+            movie.getDirector(),
+            movie.getDuration(),
+            movie.getGenre(),
+            movie.getReviews()
+        );
     }
-
 }
+

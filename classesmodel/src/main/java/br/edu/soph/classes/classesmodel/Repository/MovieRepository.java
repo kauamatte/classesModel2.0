@@ -3,11 +3,10 @@ package br.edu.soph.classes.classesmodel.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import br.edu.soph.classes.classesmodel.Model.Movie;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 
-public interface MovieRepository extends JpaRepository<Movie, Long> {
+public interface MovieRepository extends JpaRepository<Movie, UUID> {
 
     List<Movie> findByTitleContaining(String title);
 
@@ -17,10 +16,4 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     List<Movie> findByGenreContaining(String genre);
 
-    Optional<Movie> findById(UUID id);
-
-    void deleteById(UUID id);
-
-    
-
-}
+    }

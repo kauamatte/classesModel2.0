@@ -23,11 +23,12 @@ public class ReviewRegisterDTO {
     private byte rating;
     private String comment;
     private LocalDate date;
+    private String author;
     private String userCPF;
     private String movieIMDB;
 
         public Review toModel(User user, Movie movie) {
-        return new Review(id, rating, comment, date, user, movie);
+        return new Review(id, rating, comment, date, author, user, movie);
     }
 
 

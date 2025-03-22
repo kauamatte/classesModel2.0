@@ -3,6 +3,7 @@ package br.edu.soph.classes.classesmodel.Model;
     import lombok.*;
     
     import java.util.List;
+    import java.util.UUID;
     
     @Entity
     @Data
@@ -12,8 +13,7 @@ package br.edu.soph.classes.classesmodel.Model;
     public class Movie {
 
         @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long id;
+        private UUID id = UUID.randomUUID();
     
         private String IMDB;
         private String title;
@@ -23,7 +23,7 @@ package br.edu.soph.classes.classesmodel.Model;
         private short duration;
         private String genre;
     
-        @OneToMany(mappedBy = "movie1")
+        @OneToMany(mappedBy = "movie")
         private List<Review> reviews;
     }
 
