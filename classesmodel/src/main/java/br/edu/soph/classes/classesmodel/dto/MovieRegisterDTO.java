@@ -22,4 +22,8 @@ public class MovieRegisterDTO {
     public Movie toModel() {
         return new Movie(null, IMDB, title, description, releaseYear, director, duration, genre, null);
     }
+
+    public Object toDTO(Movie savedMovie) {
+        throw new UnsupportedOperationException("Unimplemented method 'toDTO'");
+    }
 }

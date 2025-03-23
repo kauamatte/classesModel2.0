@@ -8,7 +8,7 @@ import br.edu.soph.classes.classesmodel.Model.Review;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class MovieDTO {
+public class movieDTO {
 
     private String IMDB;
     private String title;
@@ -19,8 +19,8 @@ public class MovieDTO {
     private String genre;
     private List<Review> reviews;
 
-    public static MovieDTO toDTO(Movie movie) {
-        return new MovieDTO(
+    public static movieDTO toDTO(Movie movie) {
+        return new movieDTO(
             movie.getIMDB(),
             movie.getTitle(),
             movie.getDescription(),

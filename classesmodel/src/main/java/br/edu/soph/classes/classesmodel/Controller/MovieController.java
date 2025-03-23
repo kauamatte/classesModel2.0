@@ -1,6 +1,6 @@
 package br.edu.soph.classes.classesmodel.Controller;
 
-import br.edu.soph.classes.classesmodel.dto.MovieDTO;
+import br.edu.soph.classes.classesmodel.dto.movieDTO;
 import br.edu.soph.classes.classesmodel.dto.MovieRegisterDTO;
 import br.edu.soph.classes.classesmodel.service.MovieService;
 import org.springframework.http.ResponseEntity;
@@ -19,17 +19,17 @@ public class MovieController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<MovieDTO> register(@RequestBody MovieRegisterDTO movieDTO) {
+    public ResponseEntity<Object> register(@RequestBody MovieRegisterDTO movieDTO) {
         return movieService.register(movieDTO);
     }
 
     @PutMapping("/edit")
     public ResponseEntity<?> edit(@RequestBody MovieRegisterDTO movieDTO) {
-        return ResponseEntity.ok().build(); // Implementar lógica de edição no serviço
+        return ResponseEntity.ok().build(); 
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<MovieDTO>> findAll() {
+    public ResponseEntity<List<movieDTO>> findAll() {
         return movieService.findAll();
     }
 
@@ -44,22 +44,22 @@ public class MovieController {
     }
 
     @GetMapping("/title/{title}")
-    public ResponseEntity<List<MovieDTO>> findByTitle(@PathVariable String title) {
+    public ResponseEntity<List<movieDTO>> findByTitle(@PathVariable String title) {
         return movieService.findByTitle(title);
     }
 
     @GetMapping("/year/{year}")
-    public ResponseEntity<List<MovieDTO>> findByReleaseYear(@PathVariable short year) {
+    public ResponseEntity<List<movieDTO>> findByReleaseYear(@PathVariable short year) {
         return movieService.findByReleaseYear(year);
     }
 
     @GetMapping("/director/{name}")
-    public ResponseEntity<List<MovieDTO>> findByDirector(@PathVariable String name) {
-        return ResponseEntity.ok().build(); // Implementar no serviço
+    public ResponseEntity<List<movieDTO>> findByDirector(@PathVariable String name) {
+        return ResponseEntity.ok().build(); 
     }
 
     @GetMapping("/genre/{genre}")
-    public ResponseEntity<List<MovieDTO>> findByGenre(@PathVariable String genre) {
+    public ResponseEntity<List<movieDTO>> findByGenre(@PathVariable String genre) {
         return movieService.findByGenre(genre);
     }
 }
