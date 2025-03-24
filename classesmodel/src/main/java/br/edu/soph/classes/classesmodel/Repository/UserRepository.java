@@ -1,6 +1,8 @@
 package br.edu.soph.classes.classesmodel.Repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+
 import br.edu.soph.classes.classesmodel.Model.User;
 import java.util.Optional;
 

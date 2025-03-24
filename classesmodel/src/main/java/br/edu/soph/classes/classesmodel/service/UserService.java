@@ -2,10 +2,13 @@ package br.edu.soph.classes.classesmodel.service;
 
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import br.edu.soph.classes.classesmodel.Model.User;
 import br.edu.soph.classes.classesmodel.Repository.UserRepository;
+import br.edu.soph.classes.classesmodel.dto.UserDTO;
 
 
 @Service
@@ -42,6 +45,14 @@ public class UserService {
 
     public Optional<User> findByEmail(String email){
         return userRepository.findByEmail(email);
+    }
+
+    public ResponseEntity<UserDTO> register(UserDTO userDTO) {
+        throw new UnsupportedOperationException("Unimplemented method 'register'");
+    }
+
+    public ResponseEntity<?> updateProfile(UserDTO userDTO) {
+        throw new UnsupportedOperationException("Unimplemented method 'updateProfile'");
     }
 }
 
